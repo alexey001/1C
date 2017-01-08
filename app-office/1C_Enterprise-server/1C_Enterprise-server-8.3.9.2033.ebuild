@@ -63,6 +63,7 @@ pkg_setup() {
 
 src_prepare() {
 	epatch "${FILESDIR}/init.d.patch"
+	eapply_user
 }
 
 src_install() {
